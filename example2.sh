@@ -3,7 +3,7 @@
 #set username, password, and JSS location
 #jssAPIUsername="user"
 #jssAPIPassword="password"
-jssAddress="https://casperleb.iu13.org:8443"
+jssAddress="YourJSSURL"
 
 #set variable for cocoa dialog
 CD="CocoaDialog.app/Contents/MacOS/CocoaDialog"
