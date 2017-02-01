@@ -125,10 +125,7 @@ textentered=$(echo "$rv"| awk 'NR>1{print}')
 
 #lookup the device id from the given asset tag number
 myOutput=`curl -H "Accept: application/xml" -su ${jssAPIUsername}:${jssAPIPassword} -X GET ${jssAddress}/JSSResource/mobiledevices/match/$textentered`
-myResult=`echo $myOutput | xpath /mobile_devices/mobile_device/id[1] | awk -F'>|<' '/id/{print $3}'`
-myID=`echo $myResult | tail -1`
 myName=`echo $myOutput | xpath /mobile_devices/mobile_device/name[1] | awk -F'>|<' '/name/{print $3}'`
-myUserName=`echo $myOutput | xpath /mobile_devices/mobile_device/realname[1] | awk -F'>|<' '/realname/{print $3}'`
 #if we can't find the ID try again
 if [ -z "$myName" ] 
 	then
