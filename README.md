@@ -47,3 +47,21 @@ myOutput=`curl -H "Accept: application/xml" -su username:password -X GET https:/
 myName=`echo $myOutput | xpath /mobile_devices/mobile_device/name | awk -F'>|<' '/name/{print $3}'`
 echo $myName
 ```
+example1.sh
+---
+
+# Adding Dialog Boxes
+Several choices
+[Cocoa Dialog](https://mstratman.github.io/cocoadialog/) on OS X
+[Pashua](https://www.bluem.net/en/mac/pashua/) on OS X
+[Zenity](https://help.gnome.org/users/zenity/stable/) on Linux
+Windows tools are left as an exercise for the user
+--
+
+## Cocoa Dialog example
+```
+CD="CocoaDialog.app/Contents/MacOS/CocoaDialog"
+rv=`$CD standard-inputbox --informative-text "Please enter the asset tag number" --title "Asset Tag"`
+```
+![cocoa example](readme-images/cocoa example.png)
+
