@@ -51,7 +51,9 @@ example1.sh
 ---
 
 # Adding Dialog Boxes
+
 Several choices
+
 [Cocoa Dialog](https://mstratman.github.io/cocoadialog/) on OS X
 
 [Pashua](https://www.bluem.net/en/mac/pashua/) on OS X
@@ -67,4 +69,15 @@ CD="CocoaDialog.app/Contents/MacOS/CocoaDialog"
 rv=`$CD standard-inputbox --informative-text "Please enter the asset tag number" --title "Asset Tag"`
 ```
 ![cocoa example](readme-images/cocoa example.png)
+### standard-inputbox
+
+This control provides a standard input box with "Ok" and "Cancel" buttons.
+
+returns: 1 for ok, 2 for cancel depending on which button was pressed; Ok, or Cancel if the --string-output option is given. On the next line will be the text provided by the user in the textbox.
+
+```
+CocoaDialog.app/Contents/MacOS/CocoaDialog standard-inputbox --informative-text "Please enter the asset tag number" --title "Asset Tag"
+1
+12345
+```
 
