@@ -60,7 +60,7 @@ Several choices
 
 [Zenity](https://help.gnome.org/users/zenity/stable/) on Linux
 
-Windows tools are left as an exercise for the user
+
 --
 
 ## Cocoa Dialog example
