@@ -125,7 +125,7 @@ textentered=$(echo "$rv"| awk 'NR>1{print}')
 #if the button was cancel, let's exit the script
 [ $buttonclicked -eq 2 ] && exit 1
 
-#Lookup the device id from the given asset tag number
+#Lookup the device name from the given asset tag number
 myOutput=`curl -H "Accept: application/xml" -su ${jssAPIUsername}:${jssAPIPassword} -X GET ${jssAddress}/JSSResource/mobiledevices/match/$textentered`
 #Parse the name
 myName=`echo $myOutput | xpath /mobile_devices/mobile_device/name[1] | awk -F'>|<' '/name/{print $3}'`
@@ -148,3 +148,5 @@ example2.sh
 I don't deploy scripts to users so I wrap the script and Cocoa Dialog together in an app using [Platypus](http://sveinbjorn.org/platypus)
 
 Give it a name, select the script path, bundle cocoa dialog, select no interface, and click Create App
+![platypus](readme-images/platypus.png)
+
