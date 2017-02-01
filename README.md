@@ -90,7 +90,7 @@ textentered=$(echo "$rv"| awk 'NR>1{print}')
 ```
 
 ## Put together in a script to return the name
-```
+```bash
 #!/bin/bash
 
 #set username, password, and JSS location
