@@ -53,8 +53,11 @@ example1.sh
 # Adding Dialog Boxes
 Several choices
 [Cocoa Dialog](https://mstratman.github.io/cocoadialog/) on OS X
+
 [Pashua](https://www.bluem.net/en/mac/pashua/) on OS X
+
 [Zenity](https://help.gnome.org/users/zenity/stable/) on Linux
+
 Windows tools are left as an exercise for the user
 --
 
