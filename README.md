@@ -143,3 +143,6 @@ example2.sh
 
 ---
 
+## Deploying your script
+
+I don't deploy scripts to users so I wrap the script and Cocoa Dialog together in an app using [Platypus](
