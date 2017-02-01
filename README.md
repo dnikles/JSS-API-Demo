@@ -145,4 +145,6 @@ example2.sh
 
 ## Deploying your script
 
-I don't deploy scripts to users so I wrap the script and Cocoa Dialog together in an app using [Platypus](
+I don't deploy scripts to users so I wrap the script and Cocoa Dialog together in an app using [Platypus](http://sveinbjorn.org/platypus)
+
+Give it a name, select the script path, bundle cocoa dialog, select no interface, and click Create App
